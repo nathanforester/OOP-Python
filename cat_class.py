@@ -1,11 +1,13 @@
+from animal_class import *
+
 
 class Cat:
 
-    def __init__(self, name, age, legs, fur):
+    def __init__(self, name='mitten', owner='Nathan'):
+        super().__init__()
         self.name = name
-        self.age = age
-        self.legs = legs
-        self.fur = fur
+        self.owner = owner
+
 
     def run(self):
         return 'wooohooooo fun!'

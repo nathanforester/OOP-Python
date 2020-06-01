@@ -4,11 +4,11 @@
 from dog_class import *
 from cat_class import *
 
-rex_instance = Dog('Ben', 4, 7, 'brown')
+rex_instance = Dog(name='ben')
 print(rex_instance)
 print(type(rex_instance))
 
-mitten_instance = Cat('Mitten', 8, 4, 'black')
+mitten_instance = Cat()
 print(mitten_instance)
 print(type(mitten_instance))
 
@@ -23,3 +23,15 @@ print(mitten_instance.chase('dog', 'woof'))
 print(mitten_instance.ignore())
 print(mitten_instance.fight('dog'))
 print(mitten_instance.purr())
+
+print(rex_instance.get_dog_age())
+
+print(rex_instance.get_dog_age())
+
+rex_instance.dog_birthday_incrementer()
+
+print(rex_instance.get_dog_age())
+
+rex_instance.dog_birthday_incrementer()
+
+print(rex_instance.get_dog_age())
